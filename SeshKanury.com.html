@@ -6,6 +6,7 @@
 	<title>SeshKanury.com</title>
     <style type="text/css">
 		html{color:#FFFFFA;background:#3C3C3C;}
+	</style>
 	<style type="text/css">
 		h1 {font-size: 138.5%;}
 		h2 {font-size: 123.1%;}
@@ -20,12 +21,26 @@
 		  font-size: 50px;
 		  color: #FF6700;
 		}
+		
+		* {
+			margin: 0;
+		}
+		html, body {
+			height: 100%;
+		}
+		.wrapper {
+			min-height: 100%;
+			margin: 0 auto -155px; /* the bottom margin is the negative value of the footer's height */
+		}
+		.footer, .push {
+			height: 155px; /* .push must be the same height as .footer */
+		}
 	</style>
 	<meta content="Electronics, Design, Custom Systems " name="description">
   </head>
   
   <style>
-    #link_bar a { padding:15px; font-weight:bold; float:left; }
+    #link_bar a { padding:15px; font-weight:bold; float:left; font-size:138.5%;}
     #link_bar a:link { color:#d0d0d0; background-color:#0000a0; }
     #link_bar a:visited { color:#c0c0c0; background-color:#0000a0; }
     #link_bar a:hover { color:#ffffff; background-color:#000060; }
@@ -36,7 +51,7 @@
 	<div class="box">
 		<center><p>SeshKanury.com</p></center>
 	</div>
-	
+<br>
 	<div id="link_bar">
 <!--		<a href="#temperature">TEMPERATURE</a>
 		<a href="#keg_cleaning">KEG CLEANING</a>	-->
@@ -47,69 +62,73 @@
 		<br>
 		<br>
 	</div>
+	<br>
+	<br>
+	<div class="wrapper">
 <!--
-	<h2><a id="temperature" name="temperature"></a>Temperature</h2>
-	<div style="margin-left:50px">
-		<p>The general purpose temperature controller is designed with
-		these points in mind:</p>
-		<ul>
-			<li>Remotely controllable via self-served web page</li>
-			<li>Configurable for heating or cooling on individual units</li>
-			<li>Controls 1 to 253 units</li>
-			<li>Logging option available</li>
-			<li>Easy expandability through web interface</li>
-		</ul>
-		Manuals:<br>
-		<br>
-		<br>
-	</div>
-	<h2><a id="keg_cleaning" name="keg_cleaning">Keg Cleaning</a></h2>
-	<div style="margin-left:50px">
-		This semi-automated keg washer saves time and frees up brewers to do other tasks. <br>
-		These are some points intended to make a semi-automated keg washer more useful to a microbrewery:<br>
-		<ul>
-			<li>Easily adjustable cycle timing to cater to your cleaning regiment and specific detergents</li>
-			<li>Long cycle button for deep cleaning or passivisation</li>
-			<li>Hold cycle button for extremely deep cleaning</li>
-			<li>Purge time-out or optical flow sensor options for ending each purge cycle</li>
-			<li>CO2 purge and pressurization for long term keg storage</li>
-			<li>Doubles as a CIP system for the brewery</li>
-		</ul>
-		Manuals:<br>
-		<br>
-		<br>
-	</div>
+		<h2><a id="temperature" name="temperature"></a>Temperature</h2>
+		<div style="margin-left:50px">
+			<p>The general purpose temperature controller is designed with
+			these points in mind:</p>
+			<ul>
+				<li>Remotely controllable via self-served web page</li>
+				<li>Configurable for heating or cooling on individual units</li>
+				<li>Controls 1 to 253 units</li>
+				<li>Logging option available</li>
+				<li>Easy expandability through web interface</li>
+			</ul>
+			Manuals:<br>
+			<br>
+			<br>
+		</div>
+		<h2><a id="keg_cleaning" name="keg_cleaning">Keg Cleaning</a></h2>
+		<div style="margin-left:50px">
+			This semi-automated keg washer saves time and frees up brewers to do other tasks. <br>
+			These are some points intended to make a semi-automated keg washer more useful to a microbrewery:<br>
+			<ul>
+				<li>Easily adjustable cycle timing to cater to your cleaning regiment and specific detergents</li>
+				<li>Long cycle button for deep cleaning or passivisation</li>
+				<li>Hold cycle button for extremely deep cleaning</li>
+				<li>Purge time-out or optical flow sensor options for ending each purge cycle</li>
+				<li>CO2 purge and pressurization for long term keg storage</li>
+				<li>Doubles as a CIP system for the brewery</li>
+			</ul>
+			Manuals:<br>
+			<br>
+			<br>
+		</div>
 -->
-	<h2><a id="custom" name="custom"></a>Custom Design</h2>
-	<div style="margin-left:50px">
-		Sometimes there are no off-the-shelf solutions for a process you would like to automate. <br>
-		A custom controller may be an easy way to achieve your goals.<br>
-		<br>
-		<br>
-	</div>
-	<h2><a id="about" name="about"></a>About Sesh</h2>
-	<div style="margin-left:50px">
-		Sesh has designed custom systems for many different applications. With working experience in breweries,<br>
-		process control, as well as electronics repair and programming, he now applies his skills to design<br>
-		products for you.<br>
-		<br>
-		Testimonials:<br>
-		<br>
-		<br>
-	</div>
-	<h2><a id="contact" name="contact"></a>Contact Sesh</h2>
-	<div style="margin-left:50px">
-		Send inquiries to <a style="color:#FFFFFA" href="mailto:kanurys@gmail.com">kanurys@gmail.com</a><br>
-		<br>
-		<br>
-	</div>
-	<h2><a id="login" name="login"></a>Login</h2>
-	<div style="margin-left:50px">
-		<a target="_blank" style="color:#FFFFFA" href="/brew/boiler_control.html">Brew</a><br>
-		DBC<br>
-		<a target="_blank" style="color:#FFFFFA" href="/testing/">R&#38D</a><br>
-	</div>
-	<div style="position: relative; bottom: 0px;">
+		<h2><a id="custom" name="custom"></a>Custom Design</h2>
+		<div style="margin-left:50px">
+			Sometimes there are no off-the-shelf solutions for a process you would like to automate. <br>
+			A custom controller may be an easy way to achieve your goals.<br>
+			<br>
+			<br>
+		</div>
+		<h2><a id="about" name="about"></a>About Sesh</h2>
+		<div style="margin-left:50px">
+			Sesh has designed custom systems for many different applications. With working experience in breweries,<br>
+			process control, as well as electronics repair and programming, he now applies his skills to design<br>
+			products for you.<br>
+			<br>
+			Testimonials:<br>
+			<br>
+			<br>
+		</div>
+		<h2><a id="contact" name="contact"></a>Contact Sesh</h2>
+		<div style="margin-left:50px">
+			Send inquiries to <a style="color:#FFFFFA" href="mailto:kanurys@gmail.com">kanurys@gmail.com</a><br>
+			<br>
+			<br>
+		</div>
+		<h2><a id="login" name="login"></a>Login</h2>
+		<div style="margin-left:50px">
+			<a target="_blank" style="color:#FFFFFA" href="/brew/boiler_control.html">Brew</a><br>
+			DBC<br>
+			<a target="_blank" style="color:#FFFFFA" href="/testing/">R&#38D</a><br>
+		</div>
+	</div><!-- end of class "wrapper"-->
+	<div class="footer" style="position: relative; bottom: 0px;">
 		<br>
 		<br>
 		<center>© 2016 Sesh Kanury</center>
