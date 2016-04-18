@@ -1,81 +1,142 @@
 <!DOCTYPE html>
 <html lang="en">
 
-  <head>
-    <meta content="text/html; charset=utf-8" http-equiv="content-type">
-	<title>SeshKanury.com</title>
-    <style type="text/css">
-		html{color:#FFFFFA;background:#3C3C3C;}
-	</style>
-	<style type="text/css">
-		h1 {font-size: 138.5%;}
-		h2 {font-size: 123.1%;}
-		h3 {font-size: 108%;}
-		h1, h2, h3, h4, h5, h6, strong {font-weight: bold;}
-		div.box {
-		  background-color: #0000a0;
-		  filter: alpha(opacity=60);
-		}
-		div.box p {
-		  font-weight: bold;
-		  font-size: 50px;
-		  color: #FF6700;
-		}
+	<head>
+		<meta content="text/html; charset=utf-8" http-equiv="content-type">
+		<title>SeshKanury.com</title>
 		
-		* {
-			margin: 0;
-		}
-		html, body {
-			height: 100%;
-		}
-	</style>
-	<meta content="Electronics, Design, Custom Systems " name="description">
-  </head>
-  
-  <style>
-    #link_bar a { padding:15px; font-weight:bold; float:left; font-size:138.5%;}
-    #link_bar a:link { color:#d0d0d0; background-color:#0000a0; }
-    #link_bar a:visited { color:#c0c0c0; background-color:#0000a0; }
-    #link_bar a:hover { color:#ffffff; background-color:#000060; }
-    #link_bar a:active { color:#f0f0f0; background-color:#00ff00; }
-</style>
+		<style>
+			html{
+				color:#FFFFFA;
+				background:#3C3C3C;
+			}
+			
+			/*Title Banner*/
+			.box {
+				background-color: #0000a0;
+				color: #FF6700;
+				padding: 1px;
+				font-size: 60px;
+				font-weight: bold;
+				border: none;
+			}
+			
+			/* Dropdown Button */
+			.dropbtn {
+				background-color: #0000a0;
+				color: #FF6700;
+				padding: 16px 50px;
+				font-size: 25px;
+				font-weight: bold;
+				border: none;
+				cursor: pointer;
+			}
+
+			/* Dropdown button on hover & focus */
+			.dropbtn:hover, .dropbtn:focus {
+				background-color: #000060;
+			}
+
+			/* The container <div> - needed to position the dropdown content */
+			.dropdown {
+				position: relative;
+				display: inline-block;
+			}
+
+			/* Dropdown Content (Hidden by Default) */
+			.dropdown-content {
+				display: none;
+				position: absolute;
+				background-color: #f9f9f9;
+				min-width: 160px;
+				box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+			}
+
+			/* Links inside the dropdown */
+			.dropdown-content a {
+				color: black;
+				padding: 12px 16px;
+				text-decoration: none;
+				display: block;
+			}
+
+			/* Change color of dropdown links on hover */
+			.dropdown-content a:hover {
+				background-color: #0000a0;
+				color: #FF6700;
+			}
+
+			/* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+			.show {display:block;}
+			
+			/* Margin for everything else */
+			.body-content {
+				margin-left: 160px;
+				min-width: 200px;				
+			}
+		</style>
+	</head>
 
 <body>
 	<div class="box">
 		<center><p>SeshKanury.com</p></center>
 	</div>
-<br>
-	<div id="link_bar">
-<!--		<a href="#temperature">TEMPERATURE</a>
-		<a href="#keg_cleaning">KEG CLEANING</a>	-->
-		<a href="#custom">CUSTOM</a>
-		<a href="#about">ABOUT</a>
-		<a href="#contact">CONTACT</a>
-		<a href="#login"> LOGIN </a>
-		<br>
-		<br>
+	<br>
+	<div class="dropdown">
+	  <button onclick="dropdown_Function()" class="dropbtn">Menu</button>
+	  <div id="myDropdown" class="dropdown-content">
+		<a id="speaker_link" href="#speaker">SPEAKER RESTORATION</a>
+<!--		<a id="temperature_link" href="#temperature">TEMPERATURE</a>
+		<a id="cleaning_link" href="#keg_cleaning">KEG CLEANING</a>
+-->
+		<a id="custom_link" href="#custom">CUSTOM</a>
+		<a id="about_link" href="#about">ABOUT</a>
+		<a id="contact_link" href="#contact">CONTACT</a>
+		<a id="login_link" href="#login">LOGIN</a>
+	  </div>
 	</div>
-	<br>
-	<br>
-	<div>
+	
+	
+	<div class="body-content">
+		<hr>
+		<h2><a id="speaker" name="speaker"></a>Speaker Restoration</h2>
+		<div style="margin-left:50px">
+			<p>Do your speakers need a little love and care? Let me fix them for you!<br>
+			   I can pick up and drop off your speakers within the Durango area at no charge.<br>
+			   All work is performed locally!
+			</p>
+			<ul>
+				<li>Refoam with new surrounds ($75 ea / $125 pr, parts included)</li>
+				<li>Re-cone or full rebuild ($125 ea / $225 pr, basic parts included)</li>
+				<li>Dust cap repair ($25 ea + parts)</li>
+				<li>Cross-over repair or refreshing ($75/hr + parts)</li>
+				<li>All repairs include cleaning and inspection</li>
+			</ul>
+			<p>Other speaker restoration work is estimated on an individual basis depending on the<br>
+				speaker model and the work done.
+			</p>
+			<img img src="speaker.jpg" alt="Woofer">
+			<br>
+			<br>
+		</div>
 <!--
+		<hr>
 		<h2><a id="temperature" name="temperature"></a>Temperature</h2>
 		<div style="margin-left:50px">
-			<p>This controller system is inteded to bring internet access and features<br>
-			only available to large scale operations to the microbrewery at an afordable price.<br>
-			The general purpose temperature controller is designed with
+			<p>The general purpose temperature controller is designed with
 			these points in mind:</p>
 			<ul>
 				<li>Remotely controllable via self-served web page</li>
 				<li>Configurable for heating or cooling on individual units</li>
 				<li>Controls 1 to 253 units</li>
 				<li>Logging option available</li>
-				<li>Expandability through web interface, making expantion as easy as adding a new unit</li>
+				<li>Easy expandability through web interface</li>
 			</ul>
 			Manuals:<br>
 			<br>
 			<br>
 		</div>
+		<hr>
 		<h2><a id="keg_cleaning" name="keg_cleaning">Keg Cleaning</a></h2>
 		<div style="margin-left:50px">
 			This semi-automated keg washer saves time and frees up brewers to do other tasks. <br>
@@ -92,42 +153,73 @@
 			<br>
 			<br>
 		</div>
--->
+-->		
+		<hr>
 		<h2><a id="custom" name="custom"></a>Custom Design</h2>
 		<div style="margin-left:50px">
 			Sometimes there are no off-the-shelf solutions for a process you would like to automate. <br>
-			A custom controller may be an easy way to achieve your vision. <a style="color:#FFFFFA" href="#contact">Get in touch</a> and let's outline<br>
-			the tasks you've been thinking about.<br>
+			A custom controller may be an easy way to achieve your goals.<br>
 			<br>
 			<br>
 		</div>
+		<hr>
 		<h2><a id="about" name="about"></a>About Sesh</h2>
 		<div style="margin-left:50px">
-			Sesh has designed custom systems for many different applications. With working experience in breweries,<br>
-			process control, as well as electronics repair and programming, he now applies his skills to design<br>
-			products for you.<br>
-			<br>
-			Testimonials:<br>
+			I've been experimenting and designing custom systems appications for years.<br>
+			With working experience in breweries, with process control, as well as electronics repair and programming,<br>
+			I have a very flexible working knowledge of systems controls.<br>
 			<br>
 			<br>
 		</div>
+		<hr>
 		<h2><a id="contact" name="contact"></a>Contact Sesh</h2>
 		<div style="margin-left:50px">
-			Send inquiries to <a style="color:#FFFFFA" href="mailto:kanurys@gmail.com">kanurys@gmail.com</a><br>
+			<a style="color:#FFFFFA" href="mailto:kanurys@gmail.com">kanurys@gmail.com</a><br>
+			<img img src="phonenumber.jpg" alt="phone" vspace="4">
 			<br>
 			<br>
 		</div>
+		<hr>
 		<h2><a id="login" name="login"></a>Login</h2>
 		<div style="margin-left:50px">
 			<a target="_blank" style="color:#FFFFFA" href="/brew/boiler_control.html">Brew</a><br>
 			DBC<br>
 			<a target="_blank" style="color:#FFFFFA" href="/testing/">R&#38D</a><br>
 		</div>
-	</div><!-- end of class "wrapper"-->
-	<div>
+	</div>	
+	
+	<div style="position: relative; bottom: 0px;">
 		<br>
 		<br>
 		<center>© 2016 Sesh Kanury</center>
 	</div>
+	
+	
+	
+	
+	
+	<script>
+		/* When the user clicks on the button, 
+		toggle between hiding and showing the dropdown content */
+		function dropdown_Function() {
+			document.getElementById("myDropdown").classList.toggle("show");
+		}
+		
+
+		// Close the dropdown menu if the user clicks outside of it
+		window.onclick = function(event) {
+		  if (!event.target.matches('.dropbtn')) {
+
+			var dropdowns = document.getElementsByClassName("dropdown-content");
+			var i;
+			for (i = 0; i < dropdowns.length; i++) {
+			  var openDropdown = dropdowns[i];
+			  if (openDropdown.classList.contains('show')) {
+				openDropdown.classList.remove('show');
+			  }
+			}
+		  }
+		}
+	</script>
 </body>
 </html>
